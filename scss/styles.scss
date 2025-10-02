@@ -1,0 +1,123 @@
+$fontFamily: 'Outfit', sans-serif;
+$colorwhite: #ffffff;
+
+body {
+    font-family: $fontFamily;
+    margin: 0;
+    .header{
+    width: 100%;    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px;
+    box-sizing: border-box;
+    background-color: darken(#171d25, 5%);
+    &_logo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: $colorwhite;
+        img {
+            height: 80px;
+            }
+        }
+    
+    &_search {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        margin-top: 10px;
+        input {
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            font-size: 1rem;
+            width: 200px;
+            background: #316282;
+            font-family: $fontFamily;
+            color: $colorwhite;
+        }
+        button {
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 1rem;
+            cursor: pointer;
+            font-family: $fontFamily;
+            &:hover {
+                background-color: #45a049;
+                }
+            }
+        }
+    }
+    .main{
+        background: linear-gradient(180deg, #2a475e 0%, #1b2838 80%);
+        width: 100%;
+        min-height: 100vh;
+        box-sizing: border-box;
+        p{
+            color: $colorwhite;
+            margin: 0;
+        }
+        &_recommendations{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            gap: 20px;
+            padding: 20px;
+            justify-content: center;
+            &-item{
+                background-color: #171a21;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                width: 600px;
+                overflow: hidden;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-around;
+                text-align: center;
+                color: $colorwhite;
+                .recipe_image{
+                    width: 250px;
+                    
+                }
+                    .recipe_info-title{
+                        font-size: 1.2rem;
+                        margin: 10px 0;
+                    }
+                    .recipe_info{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 10px;
+                        margin: 15px;
+                    
+                        &-button{
+                            width: 100px;
+                            padding: 5px 20px;
+                            border-radius: 5px;
+                            border: none;
+                            background-color: #093e61;
+                            color: white;
+                            font-size: 1rem;
+                            cursor: pointer;
+                            font-family: $fontFamily;
+                            &:hover {
+                                background-color: #0e69a5;
+                                }
+                        }
+                    }
+                
+            }
+        }
+        
+    }
+}

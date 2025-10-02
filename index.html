@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="scss/styles.css">
+    <link rel="icon" href="img/receta_logo.ico">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/functions.js" defer></script>
+    <title>Recipe Search</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header_logo">
+            <p>RECIPE SEARCHER</p>
+        </div>
+        <div class="header_search">
+            <input type="text" id="searchInput" placeholder="Search recipes...">
+            <button id="searchButton">Search</button>
+        </div>
+    </header>
+    <main class="main">
+        <div id="recipeContainer" class="main_recommendations">
+            <div class="main_recommendations-item">
+                <img class="recipe_image" src="img/capsule_184x69_alt_assets_5.jpg" alt="Recipe Image">
+                <h3 class="recipe_info-title">Recipe Title</h3>
+                <div class="recipe_info">
+                    <button class="recipe_info-button">View Recipe</button>
+                </div>
+                
+            </div>
+        
+        </div>
+
+    </main>
+</body>
+</html>

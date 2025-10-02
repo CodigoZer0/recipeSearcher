@@ -1,0 +1,115 @@
+body {
+  font-family: "Outfit", sans-serif;
+  margin: 0;
+}
+body .header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding: 5px;
+  box-sizing: border-box;
+  background-color: rgb(13.225, 16.675, 21.275);
+}
+body .header_logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+body .header_logo img {
+  height: 80px;
+}
+body .header_search {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+body .header_search input {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+  width: 200px;
+  background: #316282;
+  font-family: "Outfit", sans-serif;
+  color: #ffffff;
+}
+body .header_search button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  font-family: "Outfit", sans-serif;
+}
+body .header_search button:hover {
+  background-color: #45a049;
+}
+body .main {
+  background: linear-gradient(180deg, #2a475e 0%, #1b2838 80%);
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+body .main p {
+  color: #ffffff;
+  margin: 0;
+}
+body .main_recommendations {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+}
+body .main_recommendations-item {
+  background-color: #171a21;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 600px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  color: #ffffff;
+}
+body .main_recommendations-item .recipe_image {
+  width: 250px;
+}
+body .main_recommendations-item .recipe_info-title {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+body .main_recommendations-item .recipe_info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 15px;
+}
+body .main_recommendations-item .recipe_info-button {
+  width: 100px;
+  padding: 5px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #093e61;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  font-family: "Outfit", sans-serif;
+}
+body .main_recommendations-item .recipe_info-button:hover {
+  background-color: #0e69a5;
+}/*# sourceMappingURL=styles.css.map */
